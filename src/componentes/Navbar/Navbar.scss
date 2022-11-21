@@ -1,0 +1,28 @@
+.navbar{
+    min-height: 80px;
+    background-color: #778899;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.navbar__menus{
+    display: flex;
+    align-items: center;
+    
+    
+
+}
+
+.navbar__menu{
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 32px;
+    min-width: 48px;
+
+}
+
+.transition:hover {
+    font-weight: 700;
+    cursor: pointer;
+}

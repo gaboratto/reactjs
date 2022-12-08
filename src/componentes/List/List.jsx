@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const List=({listas})=>{
     return(
-        <div className='text-center row row-cols-4 gx-5'>
+        <div className='text-center row row-cols-5 gx-5'>
             {
                 listas.map((lista)=>{
                     return <div className="col p-4" >

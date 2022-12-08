@@ -2,15 +2,21 @@ import PropTypes from 'prop-types';
 import './Navbar';
 import { Children } from 'react';
 import { CartWidget } from '../CartWidget/CartWidget';
+import { Titulo } from '../Titulo/Titulo';
 
 const Navbar = ({menus,children}) =>{
     return(
         <div className='navbar'>
+
+            <Titulo />
+
             <div className='navbar__menus'>
                 {
                     menus.map((menu)=>{
-                        return <div className='navbar__menu transition' >{menu}</div>
+                        return <a href={menu.href} className='navbar__menu transition' >{menu.name}</a>
                     })
+
+                    
                 }
             </div>
 

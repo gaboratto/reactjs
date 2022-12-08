@@ -1,16 +1,40 @@
 import Layout from '../../componentes/Layout'
 import Navbar from '../../componentes/Navbar'
 import List from '../../componentes/List'
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Home from '../../Home/Home'
+import Contacto from '../../Contacto/Contacto'
+import Productos from '../../Productos/Productos'
+
+
 
 
 const Initial=() =>{
-    const Menus = ['Inicio', 'Productos','Contacto']
-    const Productos = ['Mate Madera','Mate Acero','Mate Calabaza','Bombilla Pico Loro Acero Inoxidable','Bombilla Resorte Acero Inoxidable','Bombilla Chata Acero Inoxidable','Filtro para Bombilla','Termo Acero Inoxidable 1 Lts','Termo Acero Inoxidable 1,5 Lts','Termo Acero Inoxidable 1,2 Lts']
+    const Menus = [{
+        name: 'Inicio',
+        href: '/' 
+    },
+    {
+        name: 'Productos',
+        href: '/Productos' 
+    },
+    {
+        name: 'Contacto',
+        href: '/Contacto' 
+    },
+    ]
+    
     return(
-        <Layout>
+        <BrowserRouter>
+
             <Navbar menus={Menus}></Navbar>
-            <List listas={Productos}/>
-        </Layout>
+            
+        <Routes>
+        <Route exact path='/' element={<Home/>}/>
+        <Route exact path='/Contacto' element={<Contacto/>}/>
+        <Route exact path='/Productos' element={<Productos/>}/>
+        </Routes>
+        </BrowserRouter>
 
 
     )

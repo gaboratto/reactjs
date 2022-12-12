@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom'
+
 
 const List=({listas})=>{
     return(
@@ -9,7 +11,7 @@ const List=({listas})=>{
                         <div className="card border border-4" style={{ height: "100%" }}>
                     <img src={lista.imagen} className="card-img-top" alt="..."/>
                     <div className="card-body">
-                      <h5 className="card-title">{lista.name}</h5>
+                      <Link to={`/Detalle/${lista.id}`}><h5 className="card-title">{lista.name}</h5></Link>
                       <div>
                       <h7 className="card-title">${lista.precio}</h7>
                       </div>

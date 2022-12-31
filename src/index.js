@@ -4,8 +4,12 @@ import './index.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
+
 import reportWebVitals from './reportWebVitals';
 import Initial from './pages/Initial/initial';
+
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

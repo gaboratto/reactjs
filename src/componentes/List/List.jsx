@@ -15,7 +15,7 @@ const List=({listas})=>{
                       <div>
                       <h7 className="card-title">${lista.precio}</h7>
                       </div>
-                      <a href="#" className="btn btn-primary">Comprar</a>
+                      
                     </div>
                   </div>
                   </div>

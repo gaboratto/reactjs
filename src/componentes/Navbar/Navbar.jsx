@@ -3,6 +3,8 @@ import './Navbar';
 import { Children } from 'react';
 import { CartWidget } from '../CartWidget/CartWidget';
 import { Titulo } from '../Titulo/Titulo';
+import MostrarCarrito from '../../MostrarCarrito/MostrarCarrito';
+import {Link} from 'react-router-dom'
 
 const Navbar = ({menus,children}) =>{
     return(
@@ -24,7 +26,8 @@ const Navbar = ({menus,children}) =>{
                 {children}
             </div>
 
-            <CartWidget />
+            <Link to="/../../MostrarCarrito"><CartWidget /></Link>
+            
                 
             
 

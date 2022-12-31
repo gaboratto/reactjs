@@ -6,6 +6,8 @@ import Home from '../../Home/Home'
 import Contacto from '../../Contacto/Contacto'
 import Productos from '../../Productos/Productos'
 import Detalle from '../../componentes/Detalle/Detalle.jsx'
+import MostrarCarrito from '../../MostrarCarrito/MostrarCarrito'
+
 
 
 
@@ -35,6 +37,8 @@ const Initial=() =>{
         <Route exact path='/Contacto' element={<Contacto/>}/>
         <Route exact path='/Productos' element={<Productos/>}/>
         <Route exact path='/Detalle/:idproducto' element={<Detalle/>}/>
+        <Route exact path='/MostrarCarrito' element={<MostrarCarrito/>}/>
+        
         </Routes>
         </BrowserRouter>
 

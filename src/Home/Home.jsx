@@ -24,9 +24,9 @@ const Home = ()=>{
 
 
             <div className='dflex'>
-            <div><img className='MedidasFoto padding-left' src="https://scontent.ffdo4-1.fna.fbcdn.net/v/t39.30808-6/292302984_10166304005485721_5420656431707474164_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=vxEdnnJEukEAX82L-TO&_nc_ht=scontent.ffdo4-1.fna&oh=00_AfCZ9_l-k61oE1B_CTnDMdAE6_3HAbCPmuwBykguplfG_A&oe=63946AC0"/> </div>
+            <div><img className='MedidasFoto padding-left' src="https://preview.redd.it/mlh8txqu1cg71.jpg?width=640&crop=smart&auto=webp&s=ebcfae989b81dd1bde728c4a04c9ac298797285a"/> </div>
 
-            <div><img className='MedidasFoto padding-right' src="https://scontent.ffdo4-1.fna.fbcdn.net/v/t39.30808-6/279560672_10166084942615721_317734557393731206_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a26aad&_nc_ohc=vPEBPHpQFlwAX_yTGIc&tn=AFdrkmzDv_07aR29&_nc_ht=scontent.ffdo4-1.fna&oh=00_AfDJr24CF4mKzxV6PJvPojPBLWzZIU6UpmNsEaWJOtux7g&oe=63935525"/> </div>
+            <div><img className='MedidasFoto padding-right' src="https://preview.redd.it/mqqtki5v1cg71.jpg?width=640&crop=smart&auto=webp&s=4b9c43d019d40aa6ce21164a9138f404e36d4299"/> </div>
             </div>
         </div>
 

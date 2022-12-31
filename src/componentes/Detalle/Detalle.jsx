@@ -2,6 +2,8 @@ import './Detalle.scss';
 import arrayProductos from '../../componentes/Array/arrayProductos.js'
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
+import ItemCount from '../ItemCount/ItemCount';
+import Carrito from '../Carrito/Carrito';
 
 const Productos = ()=>{
         const {idproducto} = useParams();
@@ -16,6 +18,9 @@ const Productos = ()=>{
         }
     
 
+        const handlerAddCount=(count)=>{
+            Carrito.modificarCarrito(productoSeleccionado,count)
+        }
  
     
     
@@ -23,7 +28,7 @@ const Productos = ()=>{
 
         <h1 className='TextoCentrado titulo padding-top'>Detalle del producto {idproducto}</h1>
 
-      <div className='card imagen borde colorCardTexto'>
+      <div className='card imagen2 borde colorCardTexto'>
       
       <div className="row" style={{ height: "100%" }}>
          <div className='col'>
@@ -36,7 +41,7 @@ const Productos = ()=>{
                <h5 className="card-title textoProducto">{productoSeleccionado.name}</h5>
                <h7 className="card-title textoPrecio">${productoSeleccionado.precio}</h7>
                <p className="card-text textoDetalle">{productoSeleccionado.detalle}</p>
-               <a href="#" className="btn btn-primary">Comprar</a>
+               <ItemCount onChangeCount={(e)=>handlerAddCount(e)}/>
             </div>
             </div>
          </div>
